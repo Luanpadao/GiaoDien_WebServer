@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+header{
+    width: 1536px;
+    height: 180px;
+    background: rgb(255,255,255 );
+}
+header img{
+    /* pading: trên dưới    trái phải */
+    padding: 0 150px;         
+    width: 1000px;
+    height: 150px;
+    float: left;
+}
+header h1{
+    float: left;
+    padding: 0 300px;
+    text-align: center;
+    font-size:x-large;
+    line-height: 0px;
+}
+nav{
+    width: 1536px;
+    height: 50px;
+    background: rgb(131, 103, 103);
+    border-top: 4px solid #289dcc;
+}
+nav ul li{
+    float: left;
+    line-height: 50px;
+    padding: 0 40px;
+    list-style: none;
+}
+nav ul li a{
+    color:  #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
