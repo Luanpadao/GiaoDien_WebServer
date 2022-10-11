@@ -1,41 +1,91 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto",sans-serif;
 }
-header{
-    width: 1536px;
-    height: 180px;
-    background: rgb(255,255,255 );
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header img{
-    /* pading: trên dưới    trái phải */
-    padding: 0 150px;         
-    width: 1000px;
-    height: 150px;
-    float: left;
+#wapper{
+    max-width: 1536px;
+    margin: 0px auto;
 }
-header h1{
-    float: left;
-    padding: 0 300px;
+#header{
+    /* position: sticky;
+    top: 0px; */
+}
+#header > img{
+    max-width: 60%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    margin: 0px auto;
+}
+#header #title{
     text-align: center;
-    font-size:x-large;
-    line-height: 0px;
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
 }
-nav{
-    width: 1536px;
-    height: 50px;
-    background: rgb(131, 103, 103);
-    border-top: 4px solid #289dcc;
+#header #boder-na{
+    max-width: 1536px;
+    background-color: #131921;
+    border-top: 3px solid green;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
 }
-nav ul li{
-    float: left;
-    line-height: 50px;
-    padding: 0 40px;
+#header nav{
+    max-width: 960px;
+    margin: 0px auto;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+#header nav img{
+    max-width: 70px;
+    height: auto;
+}
+#header nav #main-menu{
+    display: flex;
     list-style: none;
 }
-nav ul li a{
-    color:  #fff;
-    font-size: 30px;
+#header nav #main-menu li{
+    position: relative;
+}
+#header nav #main-menu li:hover .sub-menu{
+    display: block;
+}
+#header nav #main-menu li a{
+    color:#f8f8f8;
     text-decoration: none;
+    display: block;
+    padding: 18px 50px;
+
+}
+nav #main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #171d25;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border:1px solid #434343 ;
+    display: none;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom:1px solid #434343 ;
+}
+#main-menu ul.sub-menu li:hover a{
+    border-bottom:1px solid #6e6e6e ;
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+#banner{
+    background: url(../images/background-plc.jpg);
+    min-height:480px ;
+    max-width: 100%;
+    background-position-y:-120px ;
+    background-position-x:-400px ;
 }
